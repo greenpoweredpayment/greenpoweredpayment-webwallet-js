@@ -22,9 +22,9 @@
 			<div class="body" >
 				<div class="header-title" >{{ $t("accountPage.balanceBlock.title") }}</div>
                 <div class="content">
-                    <span class="walletAmount">{{ $n(walletAmount / currencyDivider) }}</span> TRTL
+                    <span class="walletAmount">{{ $n(walletAmount / currencyDivider) }}</span> GPP
                     <tempate class="amount unlocked" v-if="unlockedWalletAmount !== walletAmount">
-                        <br /><span class="walletAmount">{{ $t("accountPage.balanceBlock.unlocked") }}: {{ $n(unlockedWalletAmount / currencyDivider) }}</span> TRTL
+                        <br /><span class="walletAmount">{{ $t("accountPage.balanceBlock.unlocked") }}: {{ $n(unlockedWalletAmount / currencyDivider) }}</span> GPP
                     </tempate>
                     <tempate class="" v-if="fusionCount > 0">
                         <br /><span class="walletAmount">{{ fusionCount }} {{ $t("accountPage.balanceBlock.fusions") }}</span>
